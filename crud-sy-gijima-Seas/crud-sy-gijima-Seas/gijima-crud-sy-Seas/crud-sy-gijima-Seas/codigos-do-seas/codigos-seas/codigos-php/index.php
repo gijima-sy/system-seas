@@ -1,6 +1,8 @@
 <?php
     include('conexao.php');
 
+    session_start()
+
     if(isset($_POST['email']) && isset($_POST['senha'])){
          
         if(strlen ($_POST['email'])== 0) {
@@ -16,18 +18,16 @@
             $sql_query = $mysqli-> query($sql_code) or die("falha na execução do codigo SQL" . $mysqli->error);
 
             $quantidade = $sql_query-> num_rows;
-
+           
             if($quantidade == 1){
-
                 $usuario = $sql_query-> fetch_assoc();
-                if(isset($_SESSION)){
+                if(password_verify($senha,$usuario['senha'])){
                     session_start();
-                }
-            $_SESSION['id'] = $usuario['id'];
-            $_SESSION['nome'] = $usuario['nome'];
+                    $_SESSION['id'] = $usuario['id'];
+                    $_SESSION['nome'] = $usuario['nome'];
 
-            header("location: painel.php");
-
+                     header("location: painel.php");
+                    exit();
             }else{
                 echo "Falha ao logar! e-mail ou senha incorretos";
             }
