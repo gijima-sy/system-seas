@@ -1,7 +1,7 @@
 <?php
     include('conexao.php');
 
-    if(isset($_POST['email'])) or isset($_POST['senha']){
+    if(isset($_POST['email']) && isset($_POST['senha'])){
          
         if(strlen ($_POST['email'])== 0) {
             echo 'preencha o seu  e-mail, para prosseguir';
