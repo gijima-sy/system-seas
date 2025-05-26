@@ -3,7 +3,7 @@
 $usuario = 'root';
 $senha ='';
 $database ='login-seas';
-$host = 'localhost'
+$host = 'localhost';
 
 $mysqli = new mysqli($host, $usuario, $senha, $database);
 
