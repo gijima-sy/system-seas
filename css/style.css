@@ -11,7 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(./imagens/img-ocean-aurora.png);
+    background: url('./imagens/praia.gif') no-repeat center center;
     background-size: cover;
     background-position: center;
 }
@@ -29,6 +29,11 @@ body{
 
 .container h1 {
     font-size: 36px;
+    text-align: center;
+}
+
+.containerh5 {
+    font-size: 18px;
     text-align: center;
 }
 

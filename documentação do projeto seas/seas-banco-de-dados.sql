@@ -14,7 +14,7 @@ CREATE TABLE adm (
     email_adm VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE psicologo (
+CREATE TABLE psicologos (
     id_psicologo INT PRIMARY KEY AUTO_INCREMENT,
     nome_psicologo VARCHAR(255) NOT NULL,
     data_nacimento DATE NOT NULL,
@@ -24,12 +24,13 @@ CREATE TABLE psicologo (
     CONSTRAINT fk_clinica_do_psicologo FOREIGN KEY (id_clinica) REFERENCES clinica(id_clinica)
 );
 
-CREATE TABLE paciente (
+CREATE TABLE pacientes (
     id_paciente INT PRIMARY KEY AUTO_INCREMENT,
     nome_paciente VARCHAR(255) NOT NULL,
     data_nacimento DATE NOT NULL,
     numero_telefone INT,
     email_paciente VARCHAR(255),
+    senha_paciente VARCHAR(16),
     id_psicologo INT,
     id_clinica INT,
     CONSTRAINT fk_psicologo_do_paciente FOREIGN KEY (id_psicologo) REFERENCES psicologo(id_psicologo),

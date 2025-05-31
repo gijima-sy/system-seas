@@ -46,7 +46,7 @@
     <main class = "container">
         <form action="" method="POST">
             <h1>Acesse sua conta!! </h1>
-            <h5 ><?php echo $mensagem; ?> </h5>
+            <h5 class='containerh5' ><?php echo $mensagem; ?> </h5>
             <div class="input-box">
                 <p>
                     <label>E-mail:</label>
