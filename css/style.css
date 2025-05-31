@@ -11,10 +11,9 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(./imagens/praia.gif);
+    background: url(./imagens/img-ocean-aurora.png);
     background-size: cover;
     background-position: center;
-
 }
 
 .container{
@@ -22,7 +21,7 @@ body{
     background-color: transparent;
     border: 2px solid rgba(255,255,255, .2);
     border-radius: 10px;
-    color: #f7f7f7;
+    color: #fff;
     padding: 30px 40px;
     box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     backdrop-filter: blur(60px);
@@ -32,11 +31,6 @@ body{
     font-size: 36px;
     text-align: center;
 }
-.container h5 {
-    font-size: 18px;
-    text-align: center;
-}
-
 
 .input-box{
     position: relative;
