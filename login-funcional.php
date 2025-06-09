@@ -1,7 +1,10 @@
 <?php
-    session_start();
+    
     include('conexao.php');
+
+
     $mensagem = "bem-vindo ao seas e de inicio a sua saude mental";
+    $mensagem2=" ";
 
     if (isset($_POST['email']) && isset($_POST['senha'])) {
         
@@ -26,7 +29,8 @@
                 header("Location: painel.php");
                 exit;
             } else {
-                $mensagem ="Dados de login inválidos";
+                $mensagem ="  ";
+                $mensagem2 =" Dados de login invalidos";
             }
         }
     }
