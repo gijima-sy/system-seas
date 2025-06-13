@@ -1,49 +1,66 @@
-<?php
-    session_start();
-    include('conexao.php');
-    include('login-funcional.php');
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min css' rel='stylesheet'> 
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />  
-    <title>login</title>
+    <link rel="stylesheet" type="text/css" href="css/style-index.css" media="screen" />
+    <title>Bem-vindo ao seas</title>
 </head>
 <body>
-    <main class = "container">
-        <form action="" method="POST">
-            <h1>Acesse sua conta!! </h1>
-            <h5 class='containerh5' ><?php echo $mensagem; ?> </h5>
-            <h2 class='containerh2'><?php echo $mensagem2; ?></h2>
+    <header>
+        <img src="./" alt="logo">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Produtos</li>
+                <li>Fale conosco</li>
+            </ul>
+        </nav>
+    </header>
 
-            <div class="input-box">
-                <p>
-                    <label>E-mail:</label>
-                    <input type="email" name="email" required placeholder="Digite seu e-mail">
-                    <i class="bx bxs-user"></i>
-                </p>
+    <section>
+
+        <div class= "list">
+
+            <div class= "itens">
+
+                <div class="car-imag">
+                    <img src="./css/imagens" alt="imagem a colocar">
+                </div>
+                
+                <div class ="content">
+                    <p class="information">
+                        informações
+                    </p>
+                    <h2>
+                        texto para chamar atenção
+                    </h2>
+                    <p class="description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae animi commodi aspernatur officiis qui magnam omnis, porro suscipit itaque illum, quisquam quia voluptatibus? Eum voluptas quae autem accusamus amet eius.
+                    </p>
+                    <button>
+                        Saiba Mais
+                    </button>
+                </div>
+
             </div>
 
-            <div class="input-box">
-                <p>
-                    <label>Senha:</label>
-                    <input type="password" name="senha" required placeholder="Digite sua senha">
-                    <i class="bx bxs-lock-alt"></i>
-                </p>
-            </div>
+        </div>
+        
+        <div class="arrows">
+            <button><img src="./css/imagens" alt="seta esquerda"></button>
+            <button><img src="./css/imagens" alt="seta direita"></button>
+        </div>
 
-            <p>
-                <button class="login" type="submit" >Acesse sua conta</button>
-            </p>
-
-            <div class="register-link">
-                <p>Ops... não tenho conta! <a href="cadastre-se.php">Sem problema, crie sua conta aqui!</a></p>
-            </div>
-        </form>
-    </main>
+        <div class="indicators" >
+            <div class="number">01</div>
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+    
 </body>
 </html>
