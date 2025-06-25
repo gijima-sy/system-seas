@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "National Park", sans-serif;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./img/praia.gif') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container{
+    width: 420px;
+
+    height: 70vh;
+    background-color: transparents;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 10px;
+    color: #fff;
+    padding: 30px 40px;
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    backdrop-filter: blur(60px);
+}
+
+.container h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.containerh5 {
+    font-size: 18px;
+    text-align: center;
+}
+.containerh2 {
+    font-size: 28px;
+    text-align: center;
+    color: crimson;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 4px solid rgba(255,255,255, .2);
+    border-radius: 40px;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #c5c5c5;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50px);
+    font-size: 20px;
+}
+
+.remenber-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+
+}
+
+.remenber-forgot label input{
+    accent-color: #fff;
+    margin-right: 5px;
+}
+
+.remenber-forgot a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.remenber-forgot a:hover {
+    text-decoration: underline;
+}
+
+.login{
+    width: 80%;
+    height: 40px;
+    background-color: #afaeae;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin-top: 20px;
+}
+.login-b1{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+    /* d */
+    width: 25%;
+    height: 50px;
+    background-color: #afaeae;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin-top: 20px;
+}
+
+.login-b1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.login:hover{
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    color:#fff;
+    transition: 0.5s;
+}
+
+.register-link{
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register-link a:hover{
+    text-decoration: underline;
+}
+
+
+
+/* table { */
+    /* width: 900px;
+
+}
+
+tr{
+    border: 2px solid black;
+    padding:8px ;
+
+}
+
+.tabela-estili{
+    width: 30%;
+    text-align: center;
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+
+th{
+    padding: 10px 0;
+    color: #fff;
+}
+
+tbody{
+    width: 400px;
+    height:60vh;
+}
+
+tbody tr{
+    background-color: #5a5a5a;
+    color: #fff;
+    height: 56px;  
+}
+
+
+tbody tr:hover{
+    background-color: #818181;
+    color: #1d1c1c;
+    cursor:pointer;
+
+    border: 2px solid rgba(255,255,255, .2);
+    color:#fff;
+    transition: 0.5s;
+}
+
+td{
+    table.tabela-estili th {
+    padding: 14px 10px;
+}
+
+thead{
+    background-color: #28317e;
+}  */
+
+
+
+/* outras regras já existentes… */
+
+/* AQUI: altura confortável p/ linhas */
